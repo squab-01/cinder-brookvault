@@ -6,26 +6,17 @@ Cinder Brookvault is a lightweight, browser-based utility for the Base ecosystem
 
 ## Repository layout
 
-- app.cinder-brookvault.ts  
+- app/cinder-brookvault.ts  
   Browser entry point responsible for wallet connection, network validation, and RPC-based reads.
 
 - config/networks.json  
   Static configuration defining Base networks, including chain IDs, RPC endpoints, and explorer URLs.
 
-- docs/design.md  
-  Architectural notes describing Base alignment and enforced read-only constraints.
-
-- docs/testnet-checks.md  
-  Validation notes collected during testing on Base Sepolia.
-
-- scripts/sample-inputs.json  
-  Example addresses used for repeatable inspection and testing flows.
-
 - contracts/  
   Solidity contracts deployed on Base Sepolia for testnet validation:
-  - your_contract.sol — minimal contract for deployment verification  
-  - your_contract.sol — simple stateful contract for interaction checks  
-  - your_contract.sol — lightweight contract optimized for read-only queries  
+  - control.sol — minimal contract for deployment verification  
+  - minimal.sol — simple stateful contract for interaction checks  
+  - errors.sol — lightweight contract optimized for read-only queries  
 
 - package.json  
   Dependency manifest referencing Coinbase SDKs and multiple Base and Coinbase repositories.
@@ -77,11 +68,13 @@ Copyright (c) 2025 YOUR_NAME
 
 ---
 
-## Author
+## Contacts:
 
-GitHub: https://github.com/
-Email: you@example.com  
-Public contact: https://x.com/your-handle  
+GitHub: https://github.com/squab-01
+
+Email: squab-01.unwary@icloud.com 
+
+Public contact: https://x.com/mimi04793 
 
 ---
 
@@ -94,18 +87,18 @@ chainId (decimal): 84532
 Explorer: https://sepolia.basescan.org  
 
 Contract #1 address:  
-your_address  
-- https://sepolia.basescan.org/address/your_address  
-- https://sepolia.basescan.org/address/your_address#code  
+0xdbC470C23c4A57b29d32275F1877FB6790D16441 
+- https://sepolia.basescan.org/address/0xdbC470C23c4A57b29d32275F1877FB6790D16441 
+- https://sepolia.basescan.org/address/0xdbC470C23c4A57b29d32275F1877FB6790D16441#code  
 
 Contract #2 address:  
-your_address  
-- https://sepolia.basescan.org/address/your_address  
-- https://sepolia.basescan.org/address/your_address#code  
+0xf573C33C0462F7A9Ad055E51Ea43DBe212c559Bb 
+- https://sepolia.basescan.org/address/0xf573C33C0462F7A9Ad055E51Ea43DBe212c559Bb  
+- https://sepolia.basescan.org/address/0xf573C33C0462F7A9Ad055E51Ea43DBe212c559Bb#code  
 
 Contract #3 address:  
-your_address  
-- https://sepolia.basescan.org/address/your_address  
-- https://sepolia.basescan.org/address/your_address#code  
+0xe5415729564B3910057adb23a1062630F6B9360f
+- https://sepolia.basescan.org/address/0xe5415729564B3910057adb23a1062630F6B9360f 
+- https://sepolia.basescan.org/address/0xe5415729564B3910057adb23a1062630F6B9360f#code  
 
 These testnet deployments provide a controlled environment for validating Base tooling, account abstraction flows, and read-only onchain access before Base Mainnet usage.
